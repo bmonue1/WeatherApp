@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="18dp"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:textSize="17dp"
+        android:textStyle="bold"
+
+        android:text="03/13/2018"
+        android:textColor="#f93217"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/temperature"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        android:text="Temperature: Fahrenheit"
+        android:textColor="#f93217"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            android:text="High"
+            android:textColor="#f9a317"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            android:text="30"
+            android:textColor="#f9a317"
+            android:id="@+id/hightemp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            android:text="Low"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            android:text="20"
+            android:id="@+id/lowtemp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            android:text="Link:"
+            android:textColor="@color/colorNeon"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            android:id="@+id/link"
+            android:text="http://..."
+            android:textColor="@color/colorNeon"
+            />
+    </LinearLayout>
+
+</LinearLayout>
